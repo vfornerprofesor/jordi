@@ -1,0 +1,194 @@
+:root {
+    /*--main-color: white;
+    --second-color: #a8a9ac;
+    --background-color: #181818;
+    --black-color: black;*/
+    --main-color: #E9EBED;
+    --second-color: #AED36C;
+    --background-color: #295D09;
+    --black-color: black;
+}
+
+@font-face {
+    font-family: 'JF_Font'; 
+    src: url('assets/fonts/lemon_milk/LEMONMILK-Regular.otf') format('otf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    /*background-color: var(--background-color);*/
+    background-image: linear-gradient(to bottom, #16BFFD,
+    #CB3066);
+    color: var(--main-color);
+    font-family: "JF_Font", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    align-items: center;
+    background-color: var(--black-color);
+}
+
+#header-img {
+    text-align: center;
+}
+
+
+#header-img img {
+    max-width: 100%;
+    max-height: 800px;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+@keyframes main-photo-animation {
+    from {
+        transform: translatex(-100px)
+    }
+
+    to {
+        transform: translatex(0)
+    }
+}
+
+#header-img img {
+    animation-name: main-photo-animation;
+    animation-duration: 2s;
+}
+
+#header-img img:hover {
+    transform: scale(0.95);
+    transition: transform 1s
+}
+
+
+
+#header-titles {
+    padding: 20px;
+    text-align: center;
+}
+
+#header-titles h1 {
+    margin-bottom: 10px;
+    color: var(--main-color);
+    font-size: 400%;
+}
+
+#header-titles h2 {
+    color: var(--second-color);
+    font-size: 200%;
+}
+
+#h1-jordiforner {
+    display: inline-block;
+    cursor: pointer;
+    background-image: linear-gradient(#696969, #696969);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position: 0 0;
+    transition: background-size 0.6s,
+        background-position 0.3s 0.5s;
+}
+
+#h1-jordiforner:hover {
+    background-size: 100% 100%;
+    background-position: 100% 0;
+    transition: background-size 0.6s,
+        background-position 0.5s 0.3s;
+}
+
+
+
+
+/* Estilos para ordenador */
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+    }
+
+    header>div {
+        width: 50%;
+    }
+}
+
+
+/* Estilos para tablet y smartphone 767px */
+@media (max-width: 1024px) {
+    header>div {}
+}
+
+
+
+
+/* MENU */
+#jf-navbar {
+
+    background-image: linear-gradient(to bottom, black, var(--background-color));
+    /*position: sticky;
+    top: 0;*/
+    color: var(--main-color) !important;
+}
+
+#menu {
+    color: var(--main-color);
+    gap: 3.5rem;
+    font-size: 30px;
+    list-style: none;
+    letter-spacing: 1px;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilos para ordenador */
+@media (min-width: 767px) {
+    #menu {
+        display: inline-flex;
+    }
+}
+
+
+/* Estilos para tablet y smartphone 767px */
+@media (max-width: 767px) {
+    #menu {
+        display: inline-block;
+    }
+}
+
+
+#menu li {
+    transition: 500ms ease;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#menu:hover li {
+    filter: blur(5px);
+}
+
+#menu > li:hover {
+    filter: blur(0);
+    transform: scale(1.1);
+    background: linear-gradient(90deg,
+            #16BFFD,
+            #CB3066
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+#menu {
+    margin-top: 2rem;
+}
+
+#menu  li  a {
+    color:  var(--main-color);
+}

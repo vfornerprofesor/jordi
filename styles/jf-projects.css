@@ -1,0 +1,190 @@
+.jf-projects, .jf-project, .jf-project-img {
+    max-height: 400px;
+}
+
+#jf-s-projects {
+
+    box-shadow: 0 0 10px #CB3066;
+    margin-top: 10px;
+}
+
+.jf-project-left {
+    animation-name: go_from_left;
+    animation-duration: 1.5s;
+}
+
+.jf-project-right {
+    animation-name: go_from_right;
+    animation-duration: 1.5s;
+}
+
+.jf-project {
+    display: none;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.jf-project-img {
+    vertical-align: middle;
+    max-width: -webkit-fill-available;
+    transform: scale(1);
+    transition: transform 1s ease;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+
+.jf-project-img:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px #CB3066;
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+
+/* Slideshow container */
+#jf-projects {
+    position: relative;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/* Next & previous buttons */
+.prevProject,
+.nextProject {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    font-size: 200%;
+    text-decoration: none;
+
+    background: linear-gradient(90deg,
+            #16BFFD,
+            #CB3066);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+
+}
+
+/* Position the "next button" to the right */
+.nextProject {
+    right: 10px;
+    border-radius: 10px;
+}
+
+.prevProject {
+    left: 10px;
+    border-radius: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevProject:hover,
+.nextProject:hover {
+
+    background: linear-gradient(90deg,
+    #CB3066,
+            #CB3066);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.jf-project:hover {
+}
+
+/* Caption text */
+.jf-project-title {
+    display: none;
+    font-size: 200%;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg,
+            #16BFFD,
+            #CB3066);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* The dots/bullets/indicators */
+.project-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-image: linear-gradient(90deg,
+            #16BFFD,
+            #CB3066);
+
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.project-dot:hover {
+
+    background-image: linear-gradient(90deg,
+            #CB3066,
+            #CB3066);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes go_from_left {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes go_from_right {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prevProject,
+    .nextProject,
+    .text {
+        font-size: 11px
+    }
+}

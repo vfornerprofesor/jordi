@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #E9EBED;
+    --second-color: #AED36C;
+    --background-color: #295D09;
+    --black-color: black;
+}
+
+@font-face {
+    font-family: 'JF_Font';
+    src: url('assets/fonts/lemon_milk/LEMONMILK-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background-color: var(--black-color);
+    color: var(--main-color);
+    font-family: "JF_Font", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+a:hover {
+    color: var(--main-color);
+}
+
+/***** MENU *****/
+.nav-link:hover {
+    filter: blur(0);
+    background: linear-gradient(90deg,
+            #16BFFD,
+            #CB3066);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+#jf-menu-logo {
+    height: 30px;
+    margin-right: 20px;
+}
+
+/**** IMPORTANT ****/
+#jf-s-important {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#jf-important-img {
+    width: 100%;
+}
+
+#jf-important-content {
+    position: absolute;
+    text-align: center;
+
+}
+
+#jf-important-content a {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.jf-i-spoty:hover {
+    color: #00D555;
+}
+
+.jf-i-youtube:hover {
+    color: red;
+}
+
+.jf-i-apple:hover {
+    color: black;
+}
+
+@media (min-width: 767px) {
+    #jf-important-content {
+        transform: scale(0);
+        transition: 1s;
+    }
+
+    #jf-s-important:hover>#jf-important-content {
+        transition: 1s;
+        transform: scale(1);
+    }
+
+    #jf-important-content a {
+        font-size: 500%;
+    }
+    #jf-s-important:hover img {
+        filter: blur(2px);
+    }
+}
+
+@media (max-width: 767px) {
+    #jf-important-content {
+        transform: scale(0);
+    }
+
+    #jf-important-content a {
+        font-size: 200%;
+    }
+
+}
+
+
+/**** JOR-D ****/
+
+
+#jf-s-jord h1, #jf-s-jord h2 {
+    text-align: center;
+}
+
+
+
+#jf-jord-1 img {
+    width: 100%;
+}
+#jf-jord-2 {
+    padding: 40px;
+}
+
+@media (min-width: 767px) {
+    #jf-s-jord .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .jf-jord-col {
+        width: 50%;
+    }
+    #jf-jord-1 {
+    }
+    #jf-jord-2 {
+
+    }
+}
+
+@media (max-width: 767px) {
+    #jf-s-jord .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .jf-jord-col {
+    }
+    #jf-jord-1 img {
+        filter: blur(3px);
+    }
+    #jf-jord-2 {
+        position: absolute;
+    }
+}
+
+/* CONTACT */
+#jf-contact {
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+#jf-contact > li {
+    list-style: none;
+    margin: 15px;
+    cursor: pointer;
+
+}
+#jf-contact > li {
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100px;
+    background: #333;
+    line-height: 100px;
+    text-align: center;
+    color: #666;
+    font-size: 3em;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#jf-contact li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--color);
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+#jf-contact li:hover:before {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--color);
+}
+
+#jf-contact li:hover {
+    color: var(--color);
+    box-shadow: 0 0 8px var(--color);
+    text-shadow: 0 0 8px var(--color);
+}
+
+@media (max-width: 767px) {
+    #jf-contact > li {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 1.5em;
+    }
+    
+    #jf-contact li:before {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px var(--color);
+    }
+    
+    #jf-contact li {
+        color: var(--color);
+        box-shadow: 0 0 8px var(--color);
+        text-shadow: 0 0 8px var(--color);
+    }
+}
+
+
+/* LANGUAGE */
+#jf-language-selector {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    
+}
+
+#jf-language-selector li {
+    margin-right: 10px;
+    list-style: none;
+}
+
+#jf-language-selector li:hover {
+    text-shadow: 0 0 10px white;
+}
+
+.jf-language-selected {
+    text-shadow: 0 0 10px white;
+}
