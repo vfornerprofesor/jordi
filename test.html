@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="galeria">
+        <div class="contenedor-imagenes">
+            <img class="imagen" src="assets/projects/project1.jpg" alt="Proyecto 1">
+            <img class="imagen" src="assets/projects/project2.jpg" alt="Proyecto 2">
+            <img class="imagen" src="assets/projects/project3.jpg" alt="Proyecto 3">
+        </div>
+        <div class="flecha-derecha">&gt;</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<style>
+    body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.galeria {
+    position: relative;
+    width: 80vw;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen {
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
+}
+
+.flecha-derecha {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+</style>
+<script>
+    const contenedorImagenes = document.querySelector('.contenedor-imagenes');
+const flechaDerecha = document.querySelector('.flecha-derecha');
+
+flechaDerecha.addEventListener('click', function() {
+    contenedorImagenes.style.transform = 'translateX(-100%)';
+});
+
+</script>
+</html>

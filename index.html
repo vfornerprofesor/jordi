@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordi Forner</title>
+    <link rel="icon" href="assets/logo.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/general.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img id="jf-menu-logo" src="assets/logo_inverse.png" alt="Logo" class="navbar-logo">
+                    Jordi Forner
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" id="jf-menu-items">
+                        <ul id="jf-language-selector">
+                            <li onclick="clickLanguage('spanish', 'english')" id="jf-language-spanish" class="jf-language-selected">🇪🇸</li>
+                            <li onclick="clickLanguage('english', 'spanish')" id="jf-language-english" >🇬🇧</li>
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" jf-type="translate" jf-text="jord" href="#jf-s-jord">Jor-D</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" jf-type="translate" jf-text="projects" href="#jf-s-projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" jf-type="translate" jf-text="colabs" href="#jf-s-colabs">Colabs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" jf-type="translate" jf-text="contact" href="#jf-s-contact">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" jf-type="translate" jf-text="news" href="#jf-s-news">Noticias</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    </header>
+
+    <section id="jf-s-important">
+        <img id="jf-important-img" src="assets/imatge-important.jpg">
+        <div id="jf-important-content">
+            <h2>NOM CANÇÓ</h2>
+            <a href="https://open.spotify.com/artist/0HSpp5ITl61UXHOCR1MG4y"><i
+                    class="fa fa-spotify jf-i-spoty"></i></a>
+            <a href="https://www.youtube.com/channel/UCWOmhJEVErXe8BhR2nid5hQ"><i
+                    class="fa fa-youtube jf-i-youtube"></i></a>
+            <a href="https://music.apple.com/cl/artist/jor-d/1504604265"><i class="fa fa-apple jf-i-apple"></i></a>
+        </div>
+    </section>
+
+    <section id="jf-s-jord">
+        <div class="row" style="padding: 0;margin:0">
+            <div id="jf-jord-1">
+                <img src="assets/jordi-portada.jpg" alt="">
+            </div>
+            <div id="jf-jord-2">
+                <h1>Jordi Forner</h1>
+                <h2 jf-type="translate" jf-text="title">Productor musical</h2>
+                <p jf-type="translate" jf-text="first_text">Comenzó con 12 años a aprender a producir, tocando estilos como big room, progressive, trap, hybrid
+                    trap…
+                    Hasta que con 21 años se centro al 100% con la producción y encontró su sonido.</p>
+                <p jf-type="translate" jf-text="second_text">Ha conseguido por su cuenta llegar a las 100k visitas en Spotify sin discográfica con el tema
+                    “Allathat”.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <section id="jf-s-projects">
+        <link rel="stylesheet" href="styles/jf-projects.css">
+        <div id="jf-projects">
+            <div class="jf-project">
+                <img class="jf-project-img" src="assets/projects/ALLATHAT PORTADA.jpg" alt="">
+                <div class="jf-project-title">ALLATHAT</div>
+            </div>
+            <div class="jf-project">
+                <img class="jf-project-img" src="assets/projects/el ladron portada.jpg" alt="">
+                <div class="jf-project-title">EL LADRÓN</div>
+            </div>
+            <div class="jf-project">
+                <img class="jf-project-img" src="assets/projects/MIRAME PORTADAAAA.PNG" alt="">
+                <div class="jf-project-title">MÍRAME</div>
+            </div>
+            <div class="jf-project">
+                <img class="jf-project-img" src="assets/projects/PARENTESIS 2 PORTADA.png" alt="">
+                <div class="jf-project-title">PARÉNTESIS 2</div>
+            </div>
+            <div class="jf-project">
+                <img class="jf-project-img" src="assets/projects/portada chuleria bomba.png" alt="">
+                <div class="jf-project-title">CHULERIA</div>
+            </div>
+            <div class="jf-project">
+                <img class="jf-project-img" src="assets/projects/portada madnes.jpg" alt="">
+                <div class="jf-project-title">MADNESS</div>
+            </div>
+            <div class="jf-project">
+                <img class="jf-project-img" src="assets/projects/qasual anthem portada.jpg" alt="">
+                <div class="jf-project-title">QASUAL ANTHEM</div>
+            </div>
+            
+            <a class="prevProject" onclick="plusSlidesProject(-1)">❮</a>
+            <a class="nextProject" onclick="plusSlidesProject(1)">❯</a>
+            
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="project-dot" onclick="currentSlideProject(1)"></span>
+            <span class="project-dot" onclick="currentSlideProject(2)"></span>
+            <span class="project-dot" onclick="currentSlideProject(3)"></span>
+            <span class="project-dot" onclick="currentSlideProject(4)"></span>
+            <span class="project-dot" onclick="currentSlideProject(5)"></span>
+            <span class="project-dot" onclick="currentSlideProject(6)"></span>
+            <span class="project-dot" onclick="currentSlideProject(7)"></span>
+        </div>
+        
+        <script src="scripts/jf-projects.js"></script>
+    </section>
+    
+
+    <section id="jf-s-colabs">
+            <link rel="stylesheet" href="styles/jf-colabs.css">
+            <div id="jf-colabs">
+                <div class="jf-colab">
+                    <img class="jf-colab-img" src="assets/colabs/ALLATHAT PORTADA.jpg" alt="">
+                    <div class="jf-colab-title">ALLATHAT</div>
+                </div>
+                <div class="jf-colab">
+                    <img class="jf-colab-img" src="assets/colabs/el ladron portada.jpg" alt="">
+                    <div class="jf-colab-title">EL LADRÓN</div>
+                </div>
+                <div class="jf-colab">
+                    <img class="jf-colab-img" src="assets/colabs/MIRAME PORTADAAAA.PNG" alt="">
+                    <div class="jf-colab-title">MÍRAME</div>
+                </div>
+                <div class="jf-colab">
+                    <img class="jf-colab-img" src="assets/colabs/PARENTESIS 2 PORTADA.png" alt="">
+                    <div class="jf-colab-title">PARÉNTESIS 2</div>
+                </div>
+                <div class="jf-colab">
+                    <img class="jf-colab-img" src="assets/colabs/portada chuleria bomba.png" alt="">
+                    <div class="jf-colab-title">CHULERIA</div>
+                </div>
+                <div class="jf-colab">
+                    <img class="jf-colab-img" src="assets/colabs/portada madnes.jpg" alt="">
+                    <div class="jf-colab-title">MADNESS</div>
+                </div>
+                <div class="jf-colab">
+                    <img class="jf-colab-img" src="assets/colabs/qasual anthem portada.jpg" alt="">
+                    <div class="jf-colab-title">QASUAL ANTHEM</div>
+                </div>
+                
+                <a class="prevColab" onclick="plusSlidesColab(-1)">❮</a>
+                <a class="nextColab" onclick="plusSlidesColab(1)">❯</a>
+                
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="colab-dot" onclick="currentSlideColab(1)"></span>
+                <span class="colab-dot" onclick="currentSlideColab(2)"></span>
+                <span class="colab-dot" onclick="currentSlideColab(3)"></span>
+                <span class="colab-dot" onclick="currentSlideColab(4)"></span>
+                <span class="colab-dot" onclick="currentSlideColab(5)"></span>
+                <span class="colab-dot" onclick="currentSlideColab(6)"></span>
+                <span class="colab-dot" onclick="currentSlideColab(7)"></span>
+            </div>
+            
+            <script src="scripts/jf-colabs.js"></script>
+        </section>
+
+    <section id="jf-s-contact">
+        <!--<h1>contact</h1>-->
+        <ul id="jf-contact">
+            <li style="--color: #00D555">
+                <a href="https://open.spotify.com/artist/0HSpp5ITl61UXHOCR1MG4y"><i class="fa fa-spotify"></i></a>
+            </li>
+            <li style="--color: red">
+                <a href="https://www.youtube.com/channel/UCWOmhJEVErXe8BhR2nid5hQ"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li style="--color: white">
+                <a href="https://music.apple.com/cl/artist/jor-d/1504604265"><i class="fa fa-apple"></i></a>
+            </li>
+            <li style="--color: #f75f01">
+                <a href="https://soundcloud.com/the-trash-of-jord"><i class="fa fa-soundcloud"></i></a>
+            </li>
+            <li style="--color: #25cc64">
+                <a href="https://wa.me/634250245"><i class="fa fa-whatsapp"></i></a>
+            </li>
+        </div>
+    </section>
+
+    <section id="jf-s-news">
+        <h1>news</h1>
+
+    </section>
+    <script src="scripts/script.js"></script>
+
+</body>
+
+
+</html>
